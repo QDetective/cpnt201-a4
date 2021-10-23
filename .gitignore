@@ -1,5 +1,1 @@
 node_modules/
-
-# Ignore commits folder
-/commits
-/commits/commits.txt
