@@ -1,6 +1,4 @@
-
 # cpnt201-a4
-
 # scavengit-game
 
 A game for learning collaborative git. This is a co-op game meant for 2-4 player teams. It has 3 levels of difficulty and covers all content for CPNT-201 git.
@@ -11,7 +9,7 @@ A game for learning collaborative git. This is a co-op game meant for 2-4 player
 
 - Maintainer: Jean-Marc (https://github.com/QDetective)
 - Collaborator: Mysia (https://github.com/Mysia14)
-- Contributor: Hayden (https://github.com/Haydenbeck-22), Filora (https://github.com/aeoyu)
+- Contributor: Hayden Gordon Ramsay, Filora (https://github.com/aeoyu)
 
 ## Rules
 
