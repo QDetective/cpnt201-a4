@@ -1,118 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-50">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scavengit</title>
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/output.css">
+    <script src="tailwind.config.js" defer></script>
+
+    <title>Checking out Tailwinds CSS</title>
 </head>
 
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
-  </nav>
-  <main class="container mx-auto grid-flow-row">
-    <header>
-      <h1>Scavengit Bug Hunt</h1>
-      <p>A game for learning how to collaborate on git</p>
-      <!--Put your team member names and roles in here-->
-      <div>
-        <h2>Mysia, Hayden, Filora and Jean Marc</h2>
-      </div>
-    </header>
-    <!--possibly make this a nav with links -->
-    <section>
-      <h2>Objectives</h2>
-      <ul>
-        <li>Make Pull Requests</li>
-        <li>Set up Collaborators</li>
-        <li>Fix Merge Conflicts</li>
-        <li>Use a gitignore</li>
-      </ul>
-      <p>This game is meant to be played in groups of 3-4. You will be working in your fork of this repo, adding one
-        another as collaborators, practicing project management and solving merge conflicts.</p>
-    </section>
+<body class="h-full">
+    <main>
+        <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-md w-full space-y-8">
+                <div>
+                    <img class="rounded-full mx-auto h-12 w-auto" src="assets/images/scarabkey.jpg" alt="scarabkey">
+                    <h2 class="titlemt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        Tailwinds Test Sign-in
+                    </h2>
+                    <p class="mt-2 text-center text-sm text-gray-600">
+                        <h3 class="font-medium text-indigo-600 hover:text-indigo-500">
+                            Enter your email and password to sign in.
+                        </h3>
+                    </p>
+                </div>
+                <form class="mt-8 space-y-6" action="#" method="POST">
+                    <input type="hidden" name="remember" value="true">
+                    <div class="rounded-md shadow-sm -space-y-px">
+                        <div>
+                            <label for="email-address" class="sr-only">Email address</label>
+                            <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="Email address">
+                        </div>
+                        <div>
+                            <label for="password" class="sr-only">Password</label>
+                            <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                placeholder="Password">
+                        </div>
+                    </div>
 
-    <section>
-      <h2>Prepare your Project</h2>
-      <ol>
-        <li>Create a markdown file named 'commits' in your fork</li>
-        <li>Make git ignore the file when you push changes</li>
-        <li>Add your name under to the header under the h1</li>
-        <li>Copy the links to the git commit into your untracked markdown file</li>
-      </ol>
-    </section>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+            Remember me
+          </label>
+                        </div>
 
-    <section>
-      <h2>Git Collaboration</h2>
-      <p>You will have 2 different types of collaborators</p>
-      <dl>
-        <dt>Collaborators with commit access</dt>
-        <dd>These people have been given commit access through the github repo's settings. They can write directly to
-          the repo without making PRs</dd>
-        <dt>Contributors without commit access</dt>
-        <dd>These people must make pull requests from their fork to your repo in order to make changes.</dd>
-      </dl>
-      <h3>Setup Tasks</h3>
-      <ol>
-        <li>Add your own name with the title 'maintainer'</li>
-        <li>Add one group member as a collaborator</li>
-        <li>The other group member will fork and contribute through PRs</li>
-        <li>You must also be added as a collaborator to 1 repo and contribute with PRs to another</li>
-        <li>Add the names of the collaborator and contributor under your own in the header</li>
-        <li>Push changes</li>
-        <li>Copy the link to the git commit into your untracked markdown file</li>
-      </ol>
-      <h3>Rules Outline</h3>
-      <ol>
-        <li>As a team decide on 3 rules for how your team will use git. ie: always pull before push, min/max word count
-          for commit messages, review process for PRs</li>
-        <li>Commit and push</li>
-        <li>Add the commit link to the untracked markdown file</li>
-      </ol>
-    </section>
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+            Forgot your password?
+          </a>
+                        </div>
+                    </div>
 
-    <section>
-      <h2>Pull Requests and Code Edits</h2>
-      <p>Here's where things get messy</p>
-      <ul>
-        <li>Make a change to the html on both of your partner's pages.</li>
-        <li>Make a change to the css on both of your partner's pages</li>
-        <li>Review and accept the PR if it meets your team's rules</li>
-        <li>Copy the commit link from your collaborator's change into your untracked markdown file</li>
-        <li>Copy the commit link from your contributor's pull request into your markdown file</li>
-        <li>Copy the commit links for both your commit and PR</li>
-      </ul>
-      <h3>Merge Conflicts!</h3>
-      <p>If you experienced and resolved a merge conflict in the above steps, then you're already done this part</p>
-      <p>Otherwise, force a merge conflict in your repo and resolve it. Then copy the commit link into your untracked
-        changes file.</p>
-    </section>
-    <section>
-      <h2>Endgame</h2>
-      <ul>
-        <li>Remove your markdown file from the gitignore and add it to your repo.</li>
-        <li>Tally up all of the git commits listed in your markdown file</li>
-        <li>rename the markdown file to have the number of commits in the title</li>
-        <li>In the README, add your repo link and github pages link under the first heading</li>
-        <li>In your README, add the heading "Attributions" and add your team members names with links to their github
-          accounts</li>
-      </ul>
-      <h3>Submission</h3>
-      <ul>
-        <li>Zip your project folder and submit it to brightspace</li>
-        <li>Add your github repo link and github pages link to the submission text box</li>
-        <li>Submit your assignment</li>
-      </ul>
-      <p>Grading will be based on git commits documented and <strong>labelled</strong> in your commits markdown file.
-      </p>
-    </section>
-  </main>
+                    <div>
+                        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <svg class="h-5 w-5 text-red-500 group-hover:text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          Sign in
+        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <header>
+        </header>
+    </main>
 </body>
 
 </html>
